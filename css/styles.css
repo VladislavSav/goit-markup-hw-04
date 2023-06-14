@@ -1,5 +1,5 @@
 :root {
-  --backgr-color: #2E2F42;
+  --backgr-color: #2e2f42;
   --main-text-color: #434455;
   --secont-text-color: #ffffff;
   --header-link-color: #404bbf;
@@ -67,17 +67,17 @@ img {
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .container {
   padding: 0 15px;
@@ -166,13 +166,15 @@ img {
 /* //////////HERO/////////////// */
 
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  background-color: var(--backgr-color);
 }
 
-.hero-container {
-  background-image: url(../images/Dark-bg.jpg);
+.hero-container{
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 188px 472px;
+max-width: 1440px;  
 }
 
 .hero-title {
@@ -232,12 +234,15 @@ img {
   margin-bottom: 8px;
 }
 
-.advantages-icon {
-  background-color: var(--btn-background-color);
+.advantages-iconbox {
+  display: flex;
+  height: 112px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
-  fill: var(--backgr-color);
+  background-color: var(--btn-background-color);
+border-radius: 4px;
 }
-
 
 /* /////////////DEVs///////////////// */
 
@@ -277,10 +282,12 @@ img {
   background-color: var(--secont-text-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-wrap {
-  padding: 32px 16px;
+  padding: 32px 0;
   gap: 8px;
   align-items: center;
 }
@@ -299,16 +306,32 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 32px;
 }
 
 .teamicons-item {
-  width: calc((100% - 24px * 3) / 4);
+  width: 40px;
+  height: 40px;
   background-color: var(--logo-color);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .teamicons-a {
-  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+}
+
+.teamicons-a:hover, .teamicons-a:focus {
+  background-color: var(--header-link-color);
+}
+
+.teamicons-icon {
+  fill: var(--btn-background-color);
 }
 
 
@@ -331,12 +354,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
-  }
+}
 
 .flogo {
   display: inline-block;
   margin-bottom: 16px;
-  }
+}
 
 .footer-logo-span {
   font-family: "Raleway", sans-serif;
@@ -346,7 +369,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--btn-background-color);
-  }
+}
 
 .footer-text {
   font-size: 16px;
@@ -359,7 +382,6 @@ img {
 /* /////////////PAGE 2/////////////////////// */
 /* ////////////PROPOSITIONS//////////////////// */
 
-
 .our-propositions {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -370,7 +392,7 @@ img {
   gap: 24px;
   margin-bottom: 72px;
   justify-content: center;
-  }
+}
 
 .propositions-btn {
   font-family: inherit;
@@ -382,9 +404,10 @@ img {
   color: var(--logo-color);
   background-color: var(--btn-background-color);
   padding: 12px 24px;
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .propositions-btn:hover,
@@ -393,7 +416,6 @@ img {
   background-color: var(--header-link-color);
   border: 1px solid transparent;
 }
-
 
 .portfolio-list {
   display: flex;
@@ -412,7 +434,7 @@ img {
 }
 
 .portfolio-item {
-width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-settings {
   padding: 32px 16px;
