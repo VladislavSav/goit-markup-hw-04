@@ -497,6 +497,55 @@ img {
   max-width: 264px;
 }
 
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.subscribe-text {
+  margin-bottom: 16px;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02px;
+color: var(--secont-text-color);
+}
+
+.footer-input {
+  margin-right: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--secont-text-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+background-color: transparent;
+height: 40px;
+padding-left: 16px;
+color: var(--secont-text-color);
+}
+.footer-input::placeholder {
+  font-size: 12px;
+line-height: 24px;
+letter-spacing: 0.48px;
+color: var(--secont-text-color);
+}
+.footer-input:focus {
+  border-color: var(--logo-color);
+}
+
+.footer-btn {
+  border-radius: 4px;
+background: var(--logo-color);
+color: var(--secont-text-color);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.64px;
+height: 40px;
+padding: 8px 24px;
+}
+.icon-telegram {
+  margin-left: 16px;
+  fill: var(--secont-text-color);
+}
+
 /* /////////////PAGE 2/////////////////////// */
 /* ////////////PROPOSITIONS//////////////////// */
 
