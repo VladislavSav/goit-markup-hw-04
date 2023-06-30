@@ -138,12 +138,9 @@ img {
   }
 
 .current {
-  color: var(--backgr-color);
-}
-.current::after {
   color: var(--header-link-color);
 }
-.header-menu-link::after {
+.current::after {
   content: "";
   position: absolute;
   left: 0;
